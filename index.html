@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train-Scheduler</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+</head>
+<body>
+        <div class="row" ></div>
+                <div id="title" class="center-align" class="col s12">
+                    <h1>Train Times<i class="material-icons"><h1>train</h1></i></h1>
+                </div>
+        </div>
+    
+        
+    
+    
+    <div  class="container" >
+        <h2 class="center-align" id="scheduledTrains">Current Train Schedule</h2>
+        <table class="centered highlight" id="trainTable">
+            <thead>
+            <tr>
+                <th id="trainName">Train Name</th>
+                <th id="destination">Destination</th>
+                <th id="frequency">Frequency(min)</th>
+                <th id="nextArrival">Next Arrival</th>
+                <th id="minutesAway">Minutes Away</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        </table>
+    </div>
+    
+
+    
+    <div class= "container">
+        <div  class="row"><h2 class="center-align" id="addTrain">Add Train</h2></div>
+        <form id="form">
+        <p>Train Name</p>
+        <input id="addName" type="text">
+        <p>Destination</p>
+        <input id="addDestination" type="text">
+        <p>First Train Time(HH:mm, Military-Time)</p>
+        <input id="addTime" type="text">
+        <p>Frequency(min)</p>
+        <input id="addFrequency">
+        <button id="submit" class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+        </form>  
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>

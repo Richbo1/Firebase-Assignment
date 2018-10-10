@@ -1,0 +1,26 @@
+html{
+    background-color: #ae5a41;
+}
+body{
+    margin-top: 0px;
+}
+#trainTable{
+    border: solid 10px #77ab59;
+}
+#title{
+    
+    background-position-y: top;
+   color: #234d20;
+   background-color: #f0f7da;
+}
+.container{
+    background-color: #f0f7da;
+    color: #559e83;
+    margin-bottom: 20px;
+    margin-top: 0px;
+
+}
+#form{
+    padding: 5px;
+    border: solid 10px #77ab59;
+}
